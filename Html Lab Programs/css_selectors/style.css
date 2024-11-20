@@ -1,0 +1,15 @@
+.para1{
+	background-color:rgb(45, 145, 39);
+	color:white;
+        font-family: 'Arial', sans-serif;
+}
+#para2{
+	background-color:rgb(250, 198, 10);
+	color:red;
+        font-family: 'Times New Roman', serif;
+}
+p{
+	background-color:rgb(165, 194, 199);
+	color:blue; 
+        font-family: 'Courier New', monospace;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <script src="form2.js"></script>
+</head>
+<body>
+    <h2 style="text-align: center;">Student Registration Form</h2>
+    <form name="myForm" onsubmit="return validateForm()" style="max-width: 600px; margin: auto;">
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td>
+                    <input type="text" name="fname" maxlength="30" required>
+                    <p id="fnameWarning" style="color: red;"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td>
+                    <input type="text" name="lname" maxlength="30" required>
+                    <p id="lnameWarning" style="color: red;"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td>
+                    <input type="date" name="dob" required>
+                    <p id="dobWarning" style="color: red;"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email" name="mail" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile Number:</td>
+                <td>
+                    <input type="tel" name="ph" pattern="[0-9]{10}" required>
+                    <small>10 digits only</small>
+                    <p id="mobileWarning" style="color: red;"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <label><input type="radio" name="gender" value="Male" required> Male</label>
+                    <label><input type="radio" name="gender" value="Female" required> Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td>
+                    <textarea name="address" cols="30" rows="3" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td>
+                    <input type="text" name="city" maxlength="30" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Pincode:</td>
+                <td>
+                    <input type="text" name="pin" pattern="[0-9]{6}" required>
+                    <small>6 digits only</small>
+                </td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td>
+                    <input type="text" name="state" maxlength="30" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <input type="text" name="country" value="India" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <label><input type="checkbox" name="hobbies" value="Drawing"> Drawing</label>
+                    <label><input type="checkbox" name="hobbies" value="Swimming"> Swimming</label>
+                    <label><input type="checkbox" name="hobbies" value="Singing"> Singing</label>
+                    <label><input type="checkbox" name="hobbies" value="Other"> Other:</label>
+                    <input type="text" name="otherHobby">
+                </td>
+            </tr>
+            <tr>
+                <td>Course Applied For:</td>
+                <td>
+                    <label><input type="radio" name="course" value="MCA" required> MCA</label>
+                    <label><input type="radio" name="course" value="M.Tech" required> M.Tech</label>
+                    <label><input type="radio" name="course" value="M.Sc" required> M.Sc</label>
+                    <label><input type="radio" name="course" value="PhD" required> PhD</label>
+                    <p id="courseWarning" style="color: red;"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="password" name="password" maxlength="30" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Upload Photo:</td>
+                <td>
+                    <input type="file" name="photo" accept="image/*" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Date of TC:</td>
+                <td>
+                    <input type="date" name="tc" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+

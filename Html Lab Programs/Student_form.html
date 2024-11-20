@@ -1,0 +1,136 @@
+<html>
+<head>
+ 
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>STUDENT REGISTRATION FORM</h2>
+    <form>
+        <table border="1">
+            <tr>
+                <td>FIRST NAME:</td>
+                <td><input type="text" name="first_name"></td>
+            </tr>
+            <tr>
+                <td>LAST NAME:</td>
+                <td><input type="text" name="last_name"></td>
+            </tr>
+            <tr>
+                <td>EMAIL ID:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>DOB:</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td>MOBILE NUMBER:</td>
+                <td><input type="text" name="mobile_number"></td>
+            </tr>
+            <tr>
+                <td>GENDER:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>ADDRESS:</td>
+                <td><input type="text" name="address" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td>CITY:</td>
+                <td><input type="text" name="city" maxlength="30">(MAX 30 Characters)</td>
+            </tr>
+            <tr>
+                <td>PIN CODE:</td>
+                <td><input type="text" name="pin_code" maxlength="6"></td>
+            </tr>
+            <tr>
+                <td>STATE:</td>
+                <td><input type="text" name="state"></td>
+            </tr>
+            <tr>
+                <td>COUNTRY:</td>
+                <td><input type="text" name="country"></td>
+            </tr>
+            <tr>
+                <td>HOBBIES:</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="Football"> Football
+                    <input type="checkbox" name="hobby" value="Travelling"> Travelling
+                    <input type="checkbox" name="hobby" value="programming"> Programming
+                    <input type="checkbox" name="hobby" value="reading"> Reading
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><b>Qualification</b></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table border="1">
+                        <tr>
+                            <th>SL NO</th>
+                            <th>Examination</th>
+                            <th>BOARD</th>
+                            <th>PERCENTAGE</th>
+                            <th>YEAR OF PASSING</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>class x</td>
+                            <td><input type="text" name="board_10" value=""></td>
+                            <td><input type="text" name="percentage_10" value=""></td>
+                            <td><input type="text" name="year_10" value=""></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>class xii</td>
+                            <td><input type="text" name="board_12" value=""></td>
+                            <td><input type="text" name="percentage_12" value=""></td>
+                            <td><input type="text" name="year_12" value=""></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>DEGREE</td>
+                            <td><input type="text" name="board_degree" value=""></td>
+                            <td><input type="text" name="percentage_degree" value=""></td>
+                            <td><input type="text" name="year_degree" value=""></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MASTERS</td>
+                            <td><input type="text" name="board_masters" value=""></td>
+                            <td><input type="text" name="percentage_masters" value=""></td>
+                            <td><input type="text" name="year_masters" value=""></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>COURSE APPLIED FOR:</td>
+                <td>
+                    <input type="checkbox" name="course" value="MCA"> MCA
+                    <input type="checkbox" name="course" value="M.Tech"> M.Tech
+                    <input type="checkbox" name="course" value="M.Sc"> M.Sc
+                    <input type="checkbox" name="course" value="Ph.D"> Ph.D
+                </td>
+            </tr>
+            <tr>
+                <td>PASSWORD:</td>
+                <td><input type="password" name="password" maxlength="30">(MAX 30 Characters)</td>
+            </tr>
+            <tr>
+                <td>Date of TC:</td>
+                <td><input type="date" name="date_tc"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="SUBMIT">
+                    <input type="reset" value="RESET">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
